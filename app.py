@@ -64,7 +64,7 @@ class ImageSpider:
             print('Extracting from {} ...'.format(sitename))
             os.mkdir(sitename);os.chdir(sitename)
             print('\nShould we can scan entire site or just home page ?')
-            option = int(input('1. Entire site\n2.Just this page\nOption : '))
+            option = int(input('1. Entire site\n2. Just this page\nOption : '))
             if option == 1:
                 all_avaialble_links = set(self.grab_all_links(url))
             else:
